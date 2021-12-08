@@ -2,7 +2,7 @@ import { UsersIcon } from '@heroicons/react/outline'
 
 export default function Stats() {
   return (
-    <div className="relative py-16 bg-white sm:py-24 lg:py-32">
+    <div className="relative my-16 bg-white sm:mb-24 lg:mb-32">
       <div className="h-56 bg-indigo-600 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
         <img
           className="object-cover w-full h-full"

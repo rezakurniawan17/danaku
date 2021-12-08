@@ -1,13 +1,13 @@
-/* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Link, Element } from 'react-scroll'
 
 const navigation = [
-  { name: 'Beranda', href: '#' },
-  { name: 'Tentang', href: '#' },
-  { name: 'Produk', href: '#' },
-  { name: 'Kontak', href: '#' },
+  { name: 'Beranda', href: '/' },
+  { name: 'Tentang', href: 'features-app' },
+  { name: 'Produk', href: 'product-app' },
+  { name: 'Kontak', href: 'contact-app' },
 ]
 
 export default function Header() {
@@ -47,11 +47,16 @@ export default function Header() {
                 </div>
                 <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                   {navigation.map((item) => (
-                    <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
+                    <Link
+                      key={item.name} 
+                      smooth={true} 
+                      spy={true} 
+                      to={item.href}
+                      className="font-medium text-gray-500 cursor-pointer focus:text-indigo-500 hover:text-gray-900">
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
-                  <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                  <a href="/simulasi-kredit" className="font-medium text-indigo-600 hover:text-indigo-500">
                     Simulasi Kredit
                   </a>
                 </div>
@@ -89,17 +94,18 @@ export default function Header() {
                   </div>
                   <div className="px-2 pt-2 pb-3 space-y-1">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
+                        smooth={true}
                         className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                   <a
-                    href="#"
+                    href="/simulasi-kredit"
                     className="block w-full px-5 py-3 font-medium text-center text-indigo-600 bg-gray-50 hover:bg-gray-100"
                   >
                     Simulasi Kredit
@@ -120,20 +126,24 @@ export default function Header() {
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <a
-                    href="#"
+                  <Link
+                    to="contact-app"
+                    smooth={true}
+                    offset={20}
                     className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                   >
                     Kontak Kami
-                  </a>
+                  </Link>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <a
-                    href="#"
+                  <Link
+                    to="contact-app"
+                    smooth={true}
+                    offset={20}
                     className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-indigo-700 bg-indigo-100 border border-transparent rounded-md hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                   >
                     Ajukan Dana
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

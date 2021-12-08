@@ -1,7 +1,7 @@
 import Header from "../components/Header/Header"
 import Features from "../components/Features/Features.jsx"
 import Stats from "../components/Features/Stats"
-import Price from "../components/Price/Price"
+import Product from "../components/Product/Product"
 import Review from "../components/Review/Review"
 import FAQ from "../components/FAQ/FAQ"
 import Contact from "../components/Contact/Contact"
@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <Features />
       <Stats />
-      <Price />
+      <Product />
       <Review />
       <Contact />
       <FAQ />
