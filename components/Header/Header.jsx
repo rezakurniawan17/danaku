@@ -80,7 +80,7 @@ export default function Header() {
                 <div className="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
                   <div className="flex items-center justify-between px-5 pt-4">
                     <div className="relative w-auto h-8">
-                    <Image priority className="w-auto h-8 sm:h-10" src={Logo} alt="" />
+                    <Image className="w-auto h-8 sm:h-10" src={Logo} alt="" />
                     </div>
                     <div className="-mr-2">
                       <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
