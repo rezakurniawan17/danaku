@@ -26,7 +26,7 @@ export default function FAQ() {
             <h2 className="text-3xl font-extrabold text-gray-900">Pertanyaan yang sering ditanyakan</h2>
             <p className="mt-4 text-lg text-gray-500">
               Belum mencari jawaban yang masih kurang meyakinkan, hubungi{' '}
-              <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+              <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
                 customer service
               </a>{' '}
               kami.

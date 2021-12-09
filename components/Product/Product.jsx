@@ -35,7 +35,7 @@ const products = [
 export default function Price() {
   return (
     <section className="product-app">
-      <div className="bg-gray-100 ">
+      <div className="relative bg-gray-100">
         <div className="pt-12 sm:pt-16 lg:pt-20">
           <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="text-center">
@@ -60,7 +60,7 @@ export default function Price() {
                       </p>
                       <div className="mt-8">
                         <div className="flex items-center">
-                          <h4 className="flex-shrink-0 pr-4 text-sm font-semibold tracking-wider text-indigo-600 uppercase bg-white">
+                          <h4 className="flex-shrink-0 pr-4 text-sm font-semibold tracking-wider text-blue-600 uppercase bg-white">
                             Keunggulan
                           </h4>
                           <div className="flex-1 border-t-2 border-gray-200" />

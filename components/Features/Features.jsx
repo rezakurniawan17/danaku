@@ -16,7 +16,7 @@ export default function Features() {
     <section className="features-app">
       <div className="relative py-16 bg-white sm:py-24 lg:py-32">
         <div className="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-          <h2 className="text-base font-semibold tracking-wider text-indigo-600 uppercase">Tentang Danamu</h2>
+          <h2 className="text-base font-semibold tracking-wider text-blue-600 uppercase">Tentang Danamu</h2>
           <p className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Yang perlu Anda tahu tentang Danamu
           </p>
@@ -30,7 +30,7 @@ export default function Features() {
                   <div className="flow-root px-6 pb-8 rounded-lg bg-gray-50">
                     <div className="-mt-6">
                       <div>
-                        <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                        <span className="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
                           <feature.icon className="w-6 h-6 text-white" aria-hidden="true" />
                         </span>
                       </div>

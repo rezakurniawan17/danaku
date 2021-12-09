@@ -1,17 +1,18 @@
+import Image from 'next/image'
+import Image3 from '../../static/img/img3.jpg'
+
 export default function Review() {
   return (
     <div className="pt-16 bg-white lg:py-24">
-      <div className="pb-16 bg-indigo-600 lg:pb-0 lg:z-10 lg:relative">
+      <div className="pb-16 bg-blue-600 lg:pb-0 lg:z-10 lg:relative">
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
           <div className="relative lg:-my-8">
             <div aria-hidden="true" className="absolute inset-x-0 top-0 bg-white h-1/2 lg:hidden" />
             <div className="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
               <div className="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
-                <img
-                  className="object-cover lg:h-full lg:w-full"
-                  src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
-                  alt=""
-                />
+                <div className="object-cover lg:h-full lg:w-full">
+                  <Image layout="fill" objectFit="cover" className="rounded-lg"  src={Image3} alt="" />
+                </div>
               </div>
             </div>
           </div>
@@ -27,13 +28,13 @@ export default function Review() {
                   >
                     <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                   </svg>
-                  <p className="mt-6 text-2xl font-medium text-white">
+                  <p className="mt-6 text-lg font-medium text-white">
                     Saya merupakan pengusaha pembuat dan penjual batik. Awalnya saya sangat membutuhkan dana untuk menunjang usaha saya, akhirnya menemukan Danamu yang bisa memberikan saya dana usaha. Sekarang bisnis saya sudah semakin berkembang. Terima kasih Danamu
                   </p>
                 </div>
                 <footer className="mt-6">
                   <p className="text-base font-medium text-white">Maria Wijayanto</p>
-                  <p className="text-base font-medium text-indigo-100">Pemilik Batikku</p>
+                  <p className="text-base font-medium text-blue-100">Pemilik Batikku</p>
                 </footer>
               </blockquote>
             </div>

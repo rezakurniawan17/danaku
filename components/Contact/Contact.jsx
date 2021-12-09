@@ -4,17 +4,18 @@ import {
   LocationMarkerIcon,
 } from '@heroicons/react/outline'
 
+import Image from 'next/image'
+import Image4 from '../../static/img/img4.jpg'
+
 export default function Contact() {
   return (
     <section className="contact-app">
       <div className="relative py-16 mt-24 bg-white sm:py-24 lg:py-32">
         <div className="lg:absolute lg:inset-0">
           <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <img
-              className="object-cover w-full h-56 lg:absolute lg:h-full"
-              src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
-              alt=""
-            />
+            <div className="object-cover w-full h-56 bg-red-400 lg:absolute lg:h-full">
+              <Image layout="fill" objectFit="cover"  src={Image4} alt="" />
+            </div>
           </div>
         </div>
         <div className="relative px-4 py-16 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
