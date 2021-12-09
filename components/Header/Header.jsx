@@ -149,7 +149,7 @@ export default function Header() {
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <div className="relative object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full">
-          <Image src={Image1} objectFit="cover" layout="fill" />
+          <Image src={Image1} priority objectFit="cover" layout="fill" />
         </div>
       </div>
     </div>
