@@ -13,8 +13,8 @@ export default function Contact() {
       <div className="relative py-16 mt-24 bg-white sm:py-24 lg:py-32">
         <div className="lg:absolute lg:inset-0">
           <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <div className="relative object-cover w-full h-56 bg-red-400 lg:absolute lg:h-full">
-              <Image layout="fill" objectFit="cover"  src={Image4} alt="" />
+            <div className="relative object-cover w-full h-56 lg:absolute lg:h-full">
+              <Image layout="fill" objectFit="cover"  src={Image4} alt="" priority />
             </div>
           </div>
         </div>

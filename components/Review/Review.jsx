@@ -10,8 +10,8 @@ export default function Review() {
             <div aria-hidden="true" className="absolute inset-x-0 top-0 bg-white h-1/2 lg:hidden" />
             <div className="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
               <div className="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
-                <div className="object-cover lg:h-full lg:w-full">
-                  <img className="object-cover lg:h-full lg:w-full" src="/static/img/img3.jpg" alt="" />
+                <div className="object-cover h-full lg:relative lg:h-full lg:w-full">
+                  <Image src={Image3} priority layout='fill' objectFit='cover' alt='' />
                 </div>
               </div>
             </div>
