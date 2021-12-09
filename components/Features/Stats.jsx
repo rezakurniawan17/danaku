@@ -6,7 +6,7 @@ export default function Stats() {
   return (
     <div className="relative my-16 bg-white sm:mb-24 lg:mb-32">
       <div className="h-56 bg-blue-600 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
-        <div className="object-cover w-full h-full">
+        <div className="relative object-cover w-full h-full">
           <Image src={Image2} objectFit="cover" layout="fill" alt="stat-image" />
         </div>
       </div>

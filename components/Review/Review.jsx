@@ -11,7 +11,7 @@ export default function Review() {
             <div className="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
               <div className="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
                 <div className="object-cover lg:h-full lg:w-full">
-                  <Image layout="fill" objectFit="cover" className="rounded-lg"  src={Image3} alt="" />
+                  <img className="object-cover lg:h-full lg:w-full" src="/static/img/img3.jpg" alt="" />
                 </div>
               </div>
             </div>

@@ -36,11 +36,7 @@ export default function Header() {
                   <div className="flex items-center justify-between w-full md:w-auto">
                     <a href="#">
                       <span className="sr-only">Workflow</span>
-                      <Image
-                        className="w-auto h-8 sm:h-10"
-                        src={Logo}
-                        layout="fill"
-                      />
+                      <Image className="w-auto h-8 sm:h-10" src={Logo} alt="" />
                     </a>
                     <div className="flex items-center -mr-2 md:hidden">
                       <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
@@ -83,12 +79,8 @@ export default function Header() {
               >
                 <div className="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
                   <div className="flex items-center justify-between px-5 pt-4">
-                    <div>
-                      <Image
-                        className="w-auto h-8"
-                        src={Logo}
-                        alt=""
-                      />
+                    <div className="relative w-auto h-8">
+                    <Image className="w-auto h-8 sm:h-10" src={Logo} alt="" />
                     </div>
                     <div className="-mr-2">
                       <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
@@ -156,7 +148,7 @@ export default function Header() {
         </div>
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <div className="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full">
+        <div className="relative object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full">
           <Image src={Image1} objectFit="cover" layout="fill" />
         </div>
       </div>
