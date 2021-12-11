@@ -1,4 +1,3 @@
-/* This example requires Tailwind CSS v2.0+ */
 const faqs = [
   {
     question: 'Bagaimana cara pengajuan modal usaha Danamu ?',
@@ -11,9 +10,14 @@ const faqs = [
       'Syarat utama pengajuan modal adalah identitas diri dan jaminan yang dapat dijaminkan. Serta harus memiliki usaha yang jelas dan dapat dipertanggungjawabkan',
   },
   {
-    question: 'Berapa bunga waktu pengajuan modal usaha ?',
+    question: 'Berapa persen bunga dari Danamu ?',
     answer:
       'Kami tidak pernah mematok nominal bunga untuk pengajuan modal usaha, kami lebih terbuka untuk negosiasi nominal bunga kepada Anda',
+  },
+  {
+    question: 'Jika saya bukan pengusaha, apakah saya bisa mengajukan modal ?',
+    answer:
+      'Pada dasarnya target pemberian modal usaha Danamu adalah para pelaku UMKM atau para pengusaha. Informasi lebih lengkapnya silahkan hubungi customer service kami',
   },
 ]
 
@@ -25,7 +29,7 @@ export default function FAQ() {
           <div>
             <h2 className="text-3xl font-extrabold text-gray-900">Pertanyaan yang sering ditanyakan</h2>
             <p className="mt-4 text-lg text-gray-500">
-              Belum mencari jawaban yang masih kurang meyakinkan, hubungi{' '}
+              Belum mencari jawaban yang Anda cari, hubungi{' '}
               <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
                 customer service
               </a>{' '}
